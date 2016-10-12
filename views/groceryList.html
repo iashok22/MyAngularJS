@@ -1,0 +1,16 @@
+<div class="col-xs-12">
+	<a href="#/addItem" style="margin-bottom: 10px" class="btn btn-primary btn-lg btn-block">
+	<span class="glyphicon glyphicon-plus"></span>Add Item</a>
+		<ul class="list-group">
+			<li ng-repeat="item in groceryItems | orderBy:'-date'" class="list-group-item text-center clearfix">
+			
+				<span style="font-weight: bold;">{{item.itemName | uppercase}}</span>
+				<button class="btn btn-danger btn-sm pull-right" ng-click="removeItem(item)">
+					<span class="glyphicon glyphicon-trash"></span>
+				</button>
+				<a href="#/editItem/{{item.id}}" class="btn btn-default btn-sm pull-right" style="margin-right: 10px">
+					<span class="glyphicon glyphicon-pencil"></span>
+				</a>
+			</li>
+		</ul>
+</div>

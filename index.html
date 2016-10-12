@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="groceryListApp">
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- <link rel="stylesheet" type="text/css" href="http://getbootstrap.com/examples/sticky-footer/sticky-footer.css"> -->
+<style>
+	.footer {
+	  position: absolute;
+	  bottom: 0;
+	  width: 100%;
+	  /* Set the fixed height of the footer here */
+	  height: 60px;
+	  background-color: #f5f5f5;
+	}
+@media screen and (max-width: 480px) {
+    .footer {
+	  position: relative;
+	  bottom: 0;
+	  width: 100%;
+	  /* Set the fixed height of the footer here */
+	  height: 40px;
+	  background-color: #f5f5f5;
+	}
+}
+
+</style>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<body ng-controller="HomeController">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">
+    	<span class="glyphicon glyphicon-apple" style="color:#5bdb48"></span>{{appTitle}}</a>
+  </div>
+</div></nav>
+
+<div class="container" ng-view>
+	<!-- <div class="col-xs-12">
+		<ul class="list-group">
+			<li ng-repeat="item in groceryItems | orderBy:'date'" class="list-group-item text-center clearfix">
+			
+				<button type="button" class="btn btn-success pull-left">
+					<span class="glyphicon glyphicon-unchecked"></span>
+				</button>
+					<span style="font-weight: bold;">{{item.itemName}}</span>
+				<button type="button" class="btn btn-default pull-right">
+					<span class="glyphicon glyphicon-pencil"></span>
+				</button>
+			</li>
+		</ul>
+</div> -->
+</div>
+<div ng-app="">
+<p>My first expression: {{ 5 + 5 }}</p>
+</div>
+<footer class="footer">
+      <div class="container">
+        <p class="text" tb-footer-text></p>
+      </div>
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
+
