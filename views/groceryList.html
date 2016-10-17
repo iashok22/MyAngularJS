@@ -4,13 +4,7 @@
 		<ul class="list-group">
 			<li ng-repeat="item in groceryItems | orderBy:'-date'" class="list-group-item text-center clearfix">
 			
-				<span style="font-weight: bold;">{{item.itemName | uppercase}}</span>
-				<button class="btn btn-danger btn-sm pull-right" ng-click="removeItem(item)">
-					<span class="glyphicon glyphicon-trash"></span>
-				</button>
-				<a href="#/editItem/{{item.id}}" class="btn btn-default btn-sm pull-right" style="margin-right: 10px">
-					<span class="glyphicon glyphicon-pencil"></span>
-				</a>
+				<tb-grocery-item></tb-grocery-item>
 			</li>
 		</ul>
 </div>
